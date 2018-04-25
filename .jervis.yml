@@ -5,7 +5,7 @@
 # This project is based on https://github.com/aurea-central-jervis-example/aurea-central-jervis
 
 language: java
-before_script:
+before_install:
   - echo '=========================================='
   - echo $(which gradle)
   - echo '=========================================='
