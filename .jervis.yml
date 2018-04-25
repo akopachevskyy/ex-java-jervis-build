@@ -5,4 +5,5 @@
 # This project is based on https://github.com/aurea-central-jervis-example/aurea-central-jervis
 
 language: java
-script: /bin/bash gradle sonarqube
+install: /bin/bash assemble
+script: /bin/bash check sonarqube
