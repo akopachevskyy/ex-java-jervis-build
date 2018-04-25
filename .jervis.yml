@@ -5,10 +5,4 @@
 # This project is based on https://github.com/aurea-central-jervis-example/aurea-central-jervis
 
 language: java
-before_install:
-  - echo '=========================================='
-  - whoami
-  - echo $PATH
-  - cat /etc/lsb-release
-  - echo '=========================================='
-script: gradle sonarqube
+script: /bin/bash gradle sonarqube
