@@ -5,46 +5,4 @@
 # This project is based on https://github.com/aurea-central-jervis-example/aurea-central-jervis
 
 language: java
-
-before_install:
-  - echo "In before install"
-  - whoami
-  - echo "Gradle is not seen on root user"
-  - export PATH=$PATH:/home/jenkins/.sdkman/candidates/gradle/current/bin
-
-#install:
-#  - echo "Here we can override build"
-
-
-env:
- - Test1="test"
-
-before_script:
-  - echo "this is before script section"
-  - whoami
-  - pwd
-
-#script:
-#  - echo "Here we can override test"
-
-stability: None
-
-branches:
-  only:
-    - master
-    - release
-    - develop
-    - feature
-
-cache:
-  directories:
-    - ${HOME}/.m2
-    - ${HOME}/.gradle
-    - ${HOME}/.sdkman
-
-
-jenkins:
-  platform: docker
-  os: ubuntu1604
-
-
+script: gradle sonarqube
