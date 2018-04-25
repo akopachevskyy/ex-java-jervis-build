@@ -5,4 +5,5 @@
 # This project is based on https://github.com/aurea-central-jervis-example/aurea-central-jervis
 
 language: java
+before_script: export PATH=$PATH:/home/jenkins/.sdkman/candidates/gradle/current/bin
 script: gradle sonarqube
