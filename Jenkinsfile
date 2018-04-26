@@ -1,5 +1,5 @@
 pipeline {
-  agent any
+  agent  { label 'language:java' }
   stages {
       stage('SonarQube analysis') {
           steps {
