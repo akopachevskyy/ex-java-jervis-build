@@ -7,4 +7,5 @@
 language: java
 before_install:
   - export PATH=$PATH:/home/jenkins/.sdkman/candidates/gradle/current/bin
-script: gradle check sonarqube -Dsonar.host.url=http://192.168.1.110:9000 -Dsonar.login=91f50d733746e64a6669938dbc9e79aa1fc6d6a0
+script: gradle check sonarqube
+#script: gradle check sonarqube -Dsonar.host.url=http://192.168.1.110:9000 -Dsonar.login=91f50d733746e64a6669938dbc9e79aa1fc6d6a0
